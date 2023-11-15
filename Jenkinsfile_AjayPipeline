@@ -5,14 +5,14 @@ pipeline {
 
                         stage(clean){
                         steps{
-                            dir('adi-forked'){
+                            dir('Ajay-MBPline'){
                                     sh 'mvn clean'
                             }
                         }
         }
                 stage(install){
                         steps{
-                            dir('adi-forked'){
+                            dir('Ajay-MBPline'){
                                     sh 'mvn install'
                         }
         }
