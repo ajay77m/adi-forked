@@ -17,10 +17,6 @@ pipeline {
                         }
         }
                          }  
-                 stage('clean ws'){
-                                steps{
-                                clean ws()
-                        }
-                     }
+                 
                  }
              }
