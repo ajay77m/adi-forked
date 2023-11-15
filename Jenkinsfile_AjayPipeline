@@ -16,17 +16,7 @@ pipeline {
                                     sh 'mvn install'
                         }
         }
-                            post{
-                                always{
-                                    archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
-                                    junit 'target/surefire-reports/*.xml'
-                                }
-                            }
-                       }
-                                stage('clean ws'){
-                                steps{
-                                clean Ws()
-                        }
-                     }
+                         }  
+                 
                  }
              }
